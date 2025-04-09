@@ -1,0 +1,40 @@
+{
+	"extensions": {
+		"archives": ["zip", "rar", "7z", "tar"],
+		"documents": ["docx", "doc", "rtf", "odt", "pdf", "txt"],
+		"images": [
+			"bmp",
+			"png",
+			"tif",
+			"tiff",
+			"jfif",
+			"webp",
+			"heic",
+			"ppm",
+			"jpg",
+			"jpeg",
+			"gif"
+		],
+		"videos": [
+			"ts",
+			"mpg",
+			"avi",
+			"m4v",
+			"mpeg",
+			"mp2",
+			"mpe",
+			"mpv",
+			"mov",
+			"mkv",
+			"webm",
+			"flv",
+			"wmv",
+			"mp4"
+		],
+		"scripts": ["py", "js"],
+		"audios": ["mp3"]
+	},
+    "defaults": {
+        "default_image_resize": 720
+    }
+}
