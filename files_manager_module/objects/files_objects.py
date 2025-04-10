@@ -30,12 +30,12 @@ class AbstractFile(ABC):
 
     def get_file_size(self) -> float:
         """
-        Возвращает размер файла в мегабайтах.
-        :return: Размер файла в мегабайтах.
-        :raises FileNotFoundError: Если файл не найден.
+        Returns file size in megabytes.
+        :return: File size in megabytes.
+        :raises FileNotFoundError: If file is not found.
         """
         if not os.path.isfile(self.file_path):
-            raise FileNotFoundError(f"Файл не найден: {self.file_path}")
+            raise FileNotFoundError(f"File is not found: {self.file_path}")
 
         file_size_bytes = os.path.getsize(self.file_path)  # Размер файла в байтах
         file_size_mb = file_size_bytes / (1024 * 1024)  # Перевод в мегабайты
